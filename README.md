@@ -1,1 +1,1 @@
-# Pan_Klatka_2.0
+# Lecimy z tematem
