@@ -8,9 +8,9 @@
 </head>
 <body>
 <form action="Petle2.php" method="post">
-<input name="pole" type="number" />
-<input name="pole2" type="number" />
-<input type="submit" />
+<input name="pole" type="number">
+<input name="pole2" type="number">
+<input type="submit">
 
 </form>
     <?php
