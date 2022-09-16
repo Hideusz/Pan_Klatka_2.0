@@ -7,7 +7,7 @@
     <title>Pętle 2</title>
 </head>
 <body>
-<form action="Petle2.php" method="post">
+<form action="" method="post">
 <input name="pole" type="number">
 <input name="pole2" type="number">
 <input type="submit">
