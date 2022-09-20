@@ -12,13 +12,16 @@
     <input type="submit">
 </form>
     <?php
-        $x = @$_POST['x'];
-        $silnia = 1;
-        for($i = 1; $i <= $x; $i++)
+        if(isset($_POST['x']))
         {
-            $silnia = $silnia * $i;
+            $x = $_POST['x'];
+            $silnia = 1;
+            for($i = 1; $i <= $x; $i++)
+            {
+                $silnia = $silnia * $i;
+            }
+            echo "<div>Silnia z liczby $x wynosi: $silnia</div>";
         }
-        echo "<div>Silnia z liczby $x wynosi: $silnia</div>";
     ?>
 </body>
 </html>
