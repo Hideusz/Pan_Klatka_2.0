@@ -14,11 +14,14 @@
 
 </form>
     <?php
-        $x = @$_POST['pole'];
-        $y = @$_POST['pole2'];
-        for($i = $x; $i <= $y; $i++)
+        if(isset($_POST['pole']))
         {
-            if($i % 5 == 0) echo $i . ', ';
+            $x = $_POST['pole'];
+            $y = $_POST['pole2'];
+            for($i = $x; $i <= $y; $i++)
+            {
+                if($i % 5 == 0) echo $i . ', ';
+            }
         }
     ?>
 </body>
