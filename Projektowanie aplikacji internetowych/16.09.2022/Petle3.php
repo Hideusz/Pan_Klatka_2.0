@@ -13,20 +13,23 @@
     <input type="submit">
 </form>
     <?php
-        $a = @$_POST['a'];
-        $b = @$_POST['b'];
-        while($a != $b)
-            {
-                if($a > $b)
+        if(isset($_POST['a']))
+        {
+            $a = $_POST['a'];
+            $b = $_POST['b'];
+            while($a != $b)
                 {
-                    $a = $a - $b;
+                    if($a > $b)
+                    {
+                        $a = $a - $b;
+                    }
+                    else
+                    {
+                        $b = $b - $a;
+                    }
                 }
-                else
-                {
-                    $b = $b - $a;
-                }
-            }
-            echo "<div>Nwd wynosi: $a</div>" ;
+                echo "<div>Nwd wynosi: $a</div>" ;
+        }
     ?>
 </body>
 </html>
