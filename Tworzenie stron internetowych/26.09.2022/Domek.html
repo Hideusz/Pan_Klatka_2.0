@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domek Artur Klatka</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.sciana{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(250, 84, 18);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.okno1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    top: 70px;
+    left: 60px;
+}
+.okno2{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    top: 70px;
+    left: 250px;
+}
+.drzwi{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: rgb(87, 0, 0);
+    top: 280px;
+    left: 160px;
+}
+.dach{
+    position: absolute;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 130px solid gray;
+    top: -130px;
+    left: -95px;
+}
+.komin{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: brown;
+    top: -140px;
+    left: 300px;
+    z-index: -1;
+}
+.klamka{
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background-color: grey;
+    top: 50px;
+    left: 60px;
+}
+    </style>
+</head>
+<body>
+    <div class="sciana">
+        <div class="okno1"></div>
+        <div class="okno2"></div>
+        <div class="drzwi">
+            <div class="klamka"></div>
+        </div>
+        <div class="dach"></div>
+        <div class="komin"></div>
+    </div>
+</body>
+</html>
