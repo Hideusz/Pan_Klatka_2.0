@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rensponsywność</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.div1{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.img1{
+    width: 20%;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+.menumale{
+    list-style-type: none;
+    display: none;
+    align-items: flex-start;
+}
+li{
+    width: 40px;
+    padding: 20px 30px 20px 30px;
+    border: 1px solid black;
+}
+.div2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.fullbanner{
+    background-color: black;
+    height: 100px;
+}
+.img2{
+    width: 30%;
+}
+.div3{
+    flex-basis: 50%;
+}
+h1{
+    border-top: 1px solid black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+button{
+    padding: 20px 40px;
+}
+.przyciskform{
+    padding: 20px 40px;
+}
+.przycisk{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.div4{
+    margin-top: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+.div5{
+
+    flex-basis: 40%;
+}
+.div6{
+    flex-basis: 40%;
+    justify-content: center;
+}
+.formularz{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+h2{
+    border-top: 1px solid black;
+    margin-bottom: 40px;
+}
+.div7{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px 40px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.img3{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div8{
+    display: flex;
+    justify-content: space-between;
+
+}
+@media(max-width:450px)
+{
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img1{
+        width: 50%;
+    }
+    .menu{
+        display: none;
+    }
+    .menumale{
+        display: flex;
+    }
+    .div2{
+        flex-direction: column;
+    }
+    .img2{
+        width: 100%;
+    }
+    .div4{
+        flex-direction: column;
+    }
+    .div7{
+        flex-wrap: wrap;
+    }
+    .img3{
+        flex-basis: 40%;
+    }
+    .dane8{
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://placeimg.com/960/720/any" class="img1">
+        <ul class="menu">
+            <li>Start</li>
+            <li>Oferta</li>
+            <li>Galeria</li>
+            <li>Kontakt</li>
+        </ul>
+        <ul class="menumale">
+            <li>Menu</li>
+        </ul>
+    </div>
+
+    <div class="fullbanner"></div>
+
+    <div class="div2">
+        <img src="https://placeimg.com/960/720/any" class="img2">
+        <div class="div3">
+            <h1>Witaj</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus necessitatibus maxime explicabo perspiciatis nostrum reiciendis enim. Itaque vel enim accusantium assumenda provident, inventore expedita accusamus eaque ad quae dolores.</p>
+            <div class="przycisk">
+                <button>Więcej</button>
+            </div>
+        </div>
+    </div>
+    <div class="fullbanner"></div>
+    <div class="div4">
+        <div class="div5">
+            <h2>Nagłówek h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum, distinctio repellat expedita fuga quia harum? Fugiat minus similique deleniti quia doloremque eveniet in? Officia iure repellat alias cupiditate aperiam!</p>
+            <div class="przycisk">
+                <button>Zobacz więcej</button>
+            </div>
+        </div>
+        <div class="div6">
+            <form action="">
+                <div class="formularz">
+                    <input type="text">
+                </div>
+                <div class="formularz"> 
+                    <input type="text" cols="30">
+                </div>
+                <div class="formularz">
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="przycisk">
+                    <input type="button" value="Wyślij" class="przyciskform">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="div7">
+        <img src="https://placeimg.com/960/720/any" class="img3">
+        <img src="https://placeimg.com/960/720/any" class="img3">
+        <img src="https://placeimg.com/960/720/any" class="img3">
+        <img src="https://placeimg.com/960/720/any" class="img3">
+    </div>
+    <div class="div8">
+        <p>Dane kontaktowe Artur Klatka</p>
+        <ul class="menu">
+            <li>Start</li>
+            <li>Oferta</li>
+            <li>Galeria</li>
+            <li>Kontakt</li>
+        </ul>       
+    </div>
+</body>
+</html>
