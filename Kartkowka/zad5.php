@@ -14,11 +14,16 @@
             $tab[$i] = rand(100,999);
         }
         $x = max($tab);
+        $y = min($tab);
         for($i=0;$i<=100;$i++)
         {
             if($tab[$i]==$x)
             {
                 echo "Najwieksza liczba $x znajduje sie na $i pozycji <br>";
+            }
+            else if($tab[$i]==$y)
+            {
+                echo "Najmniejsza liczba $y znajduje sie na $i pozycji <br>";
             }
             
         }
